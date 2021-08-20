@@ -1,4 +1,4 @@
-name: snowflake-devops-main
+name: snowflake-devops-stage
 # Controls when the action will run.
 
 on:
@@ -59,9 +59,9 @@ jobs:
 
           SF_ROLE: ${{ secrets.SF_ROLE }}
 
-          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
+          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE_STAGE }}
 
-          SF_DATABASE: ${{ secrets.SF_DATABASE }}
+          SF_DATABASE: ${{ secrets.SF_DATABASE_STAGE }}
 
           SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
 
